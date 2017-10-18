@@ -100,6 +100,18 @@ hr {
   width: 35%;
 }
 
+.image-two {
+  background-color: orange;
+}
+
+.image-three {
+  background-color: blue;
+}
+
+.image-two {
+  background-color: yellow;
+}
+
 .accordion-text {
   display: flex;
   flex-direction: column;
@@ -136,4 +148,48 @@ hr {
 .clicked {
   background-color: white;
   border-left: none;
+}
+
+@media (max-width: 550px) {
+  header {
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sub-header {
+    flex-direction: column;
+  }
+
+  hr {
+    width: 20%;
+  }
+
+  .accordion {
+    height: 20%;
+  }
+
+  .accordion-content {
+    display: none;
+  }
+
+  .tab-bar {
+    display: none;
+  }
+
+  .tab {
+    width: 100%;
+  }
+
+  .mobile {
+    display: flex;
+  }
+
+  .view-code-button {
+    align-items: center;
+    display: flex;
+    height: 5%;
+    justify-content: center;
+    width: 90%;
+  }
 }

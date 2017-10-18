@@ -2,18 +2,14 @@ const tab1 = $('.tab-one');
 const tab2 = $('.tab-two');
 const tab3 = $('.tab-three');
 const tab4 = $('.tab-four');
-
 const allTabs = $('.tab');
-
 const tabs = [tab1, tab2, tab3, tab4];
 
 const one = $('.one');
 const two = $('.two');
 const three = $('.three');
 const four = $('.four');
-
 const allContentSlides = $('.accordion-content');
-
 const allContent = [one, two, three, four];
 
 function clickTab(e) {
