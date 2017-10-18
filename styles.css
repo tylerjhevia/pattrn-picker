@@ -65,7 +65,7 @@ hr {
 
 .tab {
   align-items: center;
-  border-bottom: 1px solid #E0E1E1;
+  border-bottom: 1px solid #e0e1e1;
   border-left: 1px solid white;
   display: flex;
   justify-content: center;
@@ -73,10 +73,18 @@ hr {
   width: 25%;
 }
 
+.tab:hover {
+  cursor: pointer;
+}
+
 .tab2,
 .tab3,
 .tab4 {
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
+}
+
+.clicked {
+  background-color: yellow;
 }
 
 .accordion-content {
@@ -85,6 +93,12 @@ hr {
   height: 88%;
   justify-content: space-around;
   width: 100%;
+}
+
+.two,
+.three,
+.four {
+  display: none;
 }
 
 .accordion-image {
@@ -102,7 +116,7 @@ hr {
 }
 
 .accordion-header {
-  border-bottom: 1px solid #E0E1E1;
+  border-bottom: 1px solid #e0e1e1;
   font-size: 16px;
   font-weight: bold;
   height: 10%;
@@ -112,4 +126,16 @@ hr {
   font-size: 14px;
   height: 60%;
   padding-top: 20px;
+}
+
+.view-code-button {
+  align-self: center;
+  background-color: #3e3144;
+  color: white;
+  font-weight: lighter;
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
+  width: 20%;
 }

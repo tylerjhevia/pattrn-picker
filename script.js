@@ -3,8 +3,13 @@ const tab2 = $('.tab2');
 const tab3 = $('.tab3');
 const tab4 = $('.tab4');
 
-const showCodeButton = $('.show-code-button');
+const tabs = $('.tab');
 
-showCodeButton.on('click', () => {
-  console.log('fart');
-});
+const one = $('.one');
+const two = $('.two');
+const three = $('.three');
+const four = $('.four');
+
+const content = $('.accordion-content');
+
+const showCodeButton = $('.show-code-button');
