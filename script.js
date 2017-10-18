@@ -28,17 +28,35 @@ function clickTab(e) {
 
 function clickMobileTab(e) {
   let clickedTab = e.currentTarget;
-  mobileTabs.map(tab => $(tab).removeClass('clicked'));
-  $(clickedTab).addClass('clicked');
-  getAssociatedContent(clickedTab.classList[1]);
+  let status = $(clickedTab).children()[1];
+
+  if ($(status).text() === '+') {
+    mobileTabs.map(tab => $(tab).removeClass('clicked'));
+    $(clickedTab).addClass('clicked');
+    getAssociatedContent(clickedTab.classList[1]);
+    return $(status).text('-');
+  } else {
+    mobileTabs.map(tab => $(tab).removeClass('clicked'));
+    allContent.map(slide => $(slide).addClass('hidden'));
+    return $(status).text('+');
+  }
 }
 
-function getAssociatedContent(tabClass, allContentSlides) {
+function getAssociatedContent(tabClass) {
   let associatedContentClass = tabClass.split('-')[1];
   let associatedContent = $(`.${associatedContentClass}`);
   allContent.map(slide => $(slide).addClass('hidden'));
   $(associatedContent).removeClass('hidden');
 }
 
+function resize() {
+  if ($(window).width() < 550) {
+    tabs.map(tab => $(tab).removeClass('clicked'));
+    $(tab1).addClass('clicked');
+    return getAssociatedContent('.tab-one');
+  }
+}
+
 allTabs.on('click', clickTab);
 allMobileTabs.on('click', clickMobileTab);
+$(window).on('resize', resize);

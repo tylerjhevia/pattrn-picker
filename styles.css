@@ -26,6 +26,14 @@ h2 {
   color: #e3e2e3;
 }
 
+h1 {
+  margin-left: 20px;
+}
+
+h2 {
+  margin-right: 20px;
+}
+
 .party {
   color: #3fd1d0;
 }
@@ -48,7 +56,6 @@ hr {
 }
 
 .accordion {
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   height: 40%;
@@ -84,6 +91,8 @@ hr {
 
 .accordion-content {
   align-items: center;
+  border: 1px solid #d1d2d3;
+  border-top: none;
   display: flex;
   height: 88%;
   justify-content: space-around;
@@ -112,14 +121,13 @@ hr {
   background-color: blue;
 }
 
-.image-two {
-  background-color: yellow;
+.image-four {
+  background-color: red;
 }
 
 .accordion-text {
   display: flex;
   flex-direction: column;
-  height: 100%;
   justify-content: center;
   width: 50%;
 }
@@ -133,25 +141,34 @@ hr {
 
 .accordion-filler {
   font-size: 14px;
-  height: 60%;
   padding-top: 20px;
 }
 
 .view-code-button {
+  align-items: center;
   align-self: center;
   background-color: #3e3144;
   color: white;
+  display: flex;
   font-weight: lighter;
   font-size: 16px;
+  height: 5%;
+  justify-content: center;
   margin-top: 20px;
-  text-align: center;
   text-decoration: none;
   width: 20%;
 }
 
 .clicked {
   background-color: white;
-  border-left: none;
+  border: 1px solid #d1d2d3;
+  border-bottom: none;
+}
+
+@media (max-width: 800px) {
+  .accordion-filler {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -160,6 +177,11 @@ hr {
     flex-direction: column;
     height: 10%;
     justify-content: center;
+  }
+
+  h1,
+  h2 {
+    margin: 0px;
   }
 
   .sub-header {
@@ -209,9 +231,24 @@ hr {
     width: 90%;
   }
 
+  .accordion-filler {
+    margin-bottom: 10px;
+  }
+
   .mobile {
     display: flex;
+    font-size: 20px;
     height: 50px;
+    justify-content: space-between;
+  }
+
+  .mobile-label {
+    margin-left: 10px;
+  }
+
+  .expand-collapse {
+    font-weight: lighter;
+    margin-right: 10px;
   }
 
   .view-code-button {
