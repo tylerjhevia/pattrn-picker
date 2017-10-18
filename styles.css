@@ -1,0 +1,115 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 1000px;
+  width: 100%;
+}
+
+header {
+  align-items: center;
+  background-color: #2e2234;
+  display: flex;
+  flex-wrap: wrap;
+  height: 4%;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+h1,
+h2 {
+  color: #e3e2e3;
+}
+
+.party {
+  color: #3fd1d0;
+}
+
+.sub-header {
+  align-items: center;
+  display: flex;
+  height: 10%;
+  justify-content: space-evenly;
+}
+
+.accordion-tabs-label {
+  color: #363636;
+}
+
+hr {
+  border: .5px solid #dddddd;
+  height: 0;
+  width: 74%;
+}
+
+.accordion {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  margin: 0 auto;
+  max-width: 750px;
+  width: 80%;
+}
+
+.tab-bar {
+  display: flex;
+  height: 12%;
+  width: 100%;
+}
+
+.tab {
+  align-items: center;
+  border-bottom: 1px solid #E0E1E1;
+  border-left: 1px solid white;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 25%;
+}
+
+.tab2,
+.tab3,
+.tab4 {
+  background-color: #F1F1F1;
+}
+
+.accordion-content {
+  align-items: center;
+  display: flex;
+  height: 88%;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.accordion-image {
+  background-color: #f1f1f1;
+  height: 90%;
+  width: 35%;
+}
+
+.accordion-text {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  width: 50%;
+}
+
+.accordion-header {
+  border-bottom: 1px solid #E0E1E1;
+  font-size: 16px;
+  font-weight: bold;
+  height: 10%;
+}
+
+.accordion-filler {
+  font-size: 14px;
+  height: 60%;
+  padding-top: 20px;
+}
