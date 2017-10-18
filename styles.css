@@ -100,6 +100,10 @@ hr {
   width: 35%;
 }
 
+.image-one {
+  background-color: purple;
+}
+
 .image-two {
   background-color: orange;
 }
@@ -153,7 +157,8 @@ hr {
 @media (max-width: 550px) {
   header {
     align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    height: 10%;
     justify-content: center;
   }
 
@@ -166,11 +171,11 @@ hr {
   }
 
   .accordion {
-    height: 20%;
+    height: auto;
   }
 
   .accordion-content {
-    display: none;
+    flex-direction: column;
   }
 
   .tab-bar {
@@ -181,8 +186,32 @@ hr {
     width: 100%;
   }
 
+  .accordion {
+    height: none;
+  }
+
+  .accordion-image {
+    height: 200px;
+    width: 100%;
+  }
+
+  .accordion-content {
+    justify-content: space-between;
+  }
+
+  .accordion-header {
+    font-size: 20px;
+    margin: 20px;
+  }
+
+  .accordion-text {
+    padding: 20px;
+    width: 90%;
+  }
+
   .mobile {
     display: flex;
+    height: 50px;
   }
 
   .view-code-button {

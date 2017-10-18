@@ -12,9 +12,23 @@ const four = $('.four');
 const allContentSlides = $('.accordion-content');
 const allContent = [one, two, three, four];
 
+const mobileOne = $('.mobile-one');
+const mobileTwo = $('.mobile-two');
+const mobileThree = $('.mobile-three');
+const mobileFour = $('.mobile-four');
+const allMobileTabs = $('.mobile');
+const mobileTabs = [mobileOne, mobileTwo, mobileThree, mobileFour];
+
 function clickTab(e) {
   let clickedTab = e.currentTarget;
   tabs.map(tab => $(tab).removeClass('clicked'));
+  $(clickedTab).addClass('clicked');
+  getAssociatedContent(clickedTab.classList[1]);
+}
+
+function clickMobileTab(e) {
+  let clickedTab = e.currentTarget;
+  mobileTabs.map(tab => $(tab).removeClass('clicked'));
   $(clickedTab).addClass('clicked');
   getAssociatedContent(clickedTab.classList[1]);
 }
@@ -27,3 +41,4 @@ function getAssociatedContent(tabClass, allContentSlides) {
 }
 
 allTabs.on('click', clickTab);
+allMobileTabs.on('click', clickMobileTab);
