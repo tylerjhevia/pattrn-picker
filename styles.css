@@ -100,6 +100,22 @@ hr {
   width: 35%;
 }
 
+.image-one {
+  background-color: purple;
+}
+
+.image-two {
+  background-color: orange;
+}
+
+.image-three {
+  background-color: blue;
+}
+
+.image-two {
+  background-color: yellow;
+}
+
 .accordion-text {
   display: flex;
   flex-direction: column;
@@ -136,4 +152,73 @@ hr {
 .clicked {
   background-color: white;
   border-left: none;
+}
+
+@media (max-width: 550px) {
+  header {
+    align-items: center;
+    flex-direction: column;
+    height: 10%;
+    justify-content: center;
+  }
+
+  .sub-header {
+    flex-direction: column;
+  }
+
+  hr {
+    width: 20%;
+  }
+
+  .accordion {
+    height: auto;
+  }
+
+  .accordion-content {
+    flex-direction: column;
+  }
+
+  .tab-bar {
+    display: none;
+  }
+
+  .tab {
+    width: 100%;
+  }
+
+  .accordion {
+    height: none;
+  }
+
+  .accordion-image {
+    height: 200px;
+    width: 100%;
+  }
+
+  .accordion-content {
+    justify-content: space-between;
+  }
+
+  .accordion-header {
+    font-size: 20px;
+    margin: 20px;
+  }
+
+  .accordion-text {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .mobile {
+    display: flex;
+    height: 50px;
+  }
+
+  .view-code-button {
+    align-items: center;
+    display: flex;
+    height: 5%;
+    justify-content: center;
+    width: 90%;
+  }
 }
