@@ -15,7 +15,6 @@
 .card {
   border: 1px solid #d1d2d3;
   height: 95%;
-  /*margin: 5px;*/
   width: 90%;
 }
 
@@ -54,4 +53,17 @@
 }
 .card-seven {
   background-color: white;
+}
+
+@media (max-width: 500px) {
+  .cards-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card {
+    margin-bottom: 10px;
+  }
 }
