@@ -1,0 +1,23 @@
+.cards-container {
+  height: 60%;
+  width: 100%;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.card {
+  border: 1px solid black;
+  height: 95%;
+  margin: 5px;
+  width: 90%;
+}
+
+.card-one,
+.card-seven {
+  grid-column: span 2;
+}
