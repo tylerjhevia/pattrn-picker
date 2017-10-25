@@ -7,6 +7,12 @@
 body {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
   height: 1500px;
   width: 100%;
 }
@@ -253,7 +259,7 @@ hr {
   .view-code-button {
     align-items: center;
     display: flex;
-    height: 5%;
+    height: 3%;
     justify-content: center;
     width: 90%;
   }
