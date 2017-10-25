@@ -4,20 +4,54 @@
 }
 
 .cards-container {
+  align-self: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   justify-items: center;
+  width: 80%;
 }
 
 .card {
-  border: 1px solid black;
+  border: 1px solid #d1d2d3;
   height: 95%;
-  margin: 5px;
+  /*margin: 5px;*/
   width: 90%;
 }
 
 .card-one,
 .card-seven {
   grid-column: span 2;
+}
+
+.card-header {
+  align-items: center;
+  background-color: white;
+  border-bottom: 1px solid #d1d2d3;
+  display: flex;
+  font-weight: bold;
+  height: 20%;
+  padding-left: 10px;
+}
+
+.card-one {
+  background-color: blue;
+}
+.card-two {
+  background-color: orange;
+}
+.card-three {
+  background-color: black;
+}
+.card-four {
+  background-color: purple;
+}
+.card-five {
+  background-color: yellow;
+}
+.card-six {
+  background-color: pink;
+}
+.card-seven {
+  background-color: white;
 }
