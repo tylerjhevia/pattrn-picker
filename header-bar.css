@@ -45,6 +45,7 @@
   font-weight: lighter;
   height: 40%;
   margin: 10px;
+  outline: none;
   width: 100%;
 }
 
@@ -52,6 +53,10 @@
   height: 15px;
   margin: 5px;
   width: 15px;
+}
+
+.search-icon:hover {
+  cursor: pointer;
 }
 
 .menu {
