@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
     <link rel='stylesheet' href='./styles.css' />
     <link rel='stylesheet' href='./flex-cards.css' />
+    <link rel='stylesheet' href='./header-bar.css' />
+
 </head>
 
 <body>
@@ -152,14 +154,35 @@
             <a class='view-code-button button-two' href='https://github.com/tylerjhevia/pattrn-picker'>View Code</a>
         </div>
 
+        <div class='sub-header sub-header-3'>
+            <p class='header-bar-label '>HEADER BAR</p>
+            <hr />
+        </div>
+
         <div class='header-bar-section'>
 
-        </div </div>
+
+            <div class='header-bar'>
+                <img class='icon' src='./planet-icon.svg' />
+                <p class='menu'>MENU</p>
+                <div class='nav-links'>
+                    <p class='nav nav-1'>Navigation Link 1</p>
+                    <p class='nav nav-2'>Navigation Link 2</p>
+                    <p class='nav nav-3'>Navigation Link 3</p>
+                    <div class='search-div'>
+                        <img src='./search-icon.svg' class='search-icon' />
+                        <input class='search' placeholder='Search' />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
 
-
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src='./script.js '></script>
+    <script src='./jquery.js'></script>
+    <script src='./header-bar.js'></script>
+    <script src='./script.js '></script>
 </body>
 
 </html>
