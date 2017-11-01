@@ -8,7 +8,7 @@ This project aims to create a small library of reusable, responsive page element
 
 ##### Accordion Tabs
 
-![Accordion Tabs Desktop](https://imgur.com/a/TEs3O)
+![Accordion Tabs Desktop]('screenshots/accordion-tab-desktop.png)
 
 A div that displays an image and some text. When a tab is clicked, the image and text change. On smaller screens the tabs stack, and each tab's corresponding image and text appear underneath the tab on click. 
 
