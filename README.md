@@ -1,5 +1,4 @@
 # PATTRN PARTY
--
 
 ### Introduction
 
